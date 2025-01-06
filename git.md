@@ -77,7 +77,11 @@ git branch : check branch
 
 git switch -c <branch-name> : create and switch to the new branch
 
+git switch <branch-name> : switch to a branch
+
 git push origin HEAD:main : To push to the upstream branch (which is main / master)
 on the remote 
 
 git push origin HEAD : To push to the branch of the same name on the remote
+
+git merge <branch-name>: merge the current branch you are located with the branch name you specified.
