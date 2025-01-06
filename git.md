@@ -60,3 +60,24 @@ git branch : list all the local branches.
 git branch -a : list all branches, including both local branches and remote-tracking branches.
 
 git push : sync your local repository to your remote repository.
+
+git pull: a combination of git fetch and git merge.
+
+<!-- When using git fetch, your local repository itself doesn't get the changes directly into your working directory (where your project file is located).  -->
+
+git fetch: fetch the update from the remote repository.
+- git log would not show us the message.
+- git status tells us why, the commit is `Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.`
+
+git merge: merge the update / changes into the current branch.
+
+# Branch Management
+
+git branch : check branch
+
+git switch -c <branch-name> : create and switch to the new branch
+
+git push origin HEAD:main : To push to the upstream branch (which is main / master)
+on the remote 
+
+git push origin HEAD : To push to the branch of the same name on the remote
